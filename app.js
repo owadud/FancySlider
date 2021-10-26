@@ -132,9 +132,18 @@ sliderBtn.addEventListener('click', function () {
 
 //my changing
 
+
+
 document.getElementById("search").addEventListener("keypress", function (event) {
 console.log(event.key);
   if (event.key === "Enter") {
     searchBtn.click();
   }
 });
+
+document.getElementById('duration').addEventListener("keypress", function(event) {
+  if(event.key == "Enter"){
+    sliderBtn.click();
+  }
+});
+
